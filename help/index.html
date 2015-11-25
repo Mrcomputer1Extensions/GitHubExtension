@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="http://scratchblocks.github.io/scratchblocks2.css">
     <script src="http://scratchblocks.github.io/scratchblocks2.js"></script>
     <script>
-    function load(){
-      scratchblocks2.parse("pre.blocks");
-    }
+    $(document).ready(function(){
+      scratchblocks2.parse("div.blocks");
+    });
     </script>
   </head>
-  <body onload="load()">
+  <body>
     <div class='blocks'>
       {GitHub (Extension)::reporter extension <Help>::boolean operators}::stack control
     </div>
