@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Extension Help</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <link rel="stylesheet" href="http://scratchblocks.github.io/scratchblocks2.css">
+    <script src="http://scratchblocks.github.io/scratchblocks2.js"></script>
+    <script>
+    $(document).ready(function(){
+      scratchblocks2.parse("div.blocks");
+    });
+    </script>
+    <style>
+      .heading{
+        background-color:#4B4A60;
+        color:white;
+        padding:2px;
+        text-decoration:none
+      }
+    </style>
+  </head>
+  <body>
+    <a href='..'><div class='blocks'>&lt;-- Go back! ::stack control</div></a>
+    
+    <br>
+    <div class='blocks'>Your username ::reporter extension</div>
+    
+    <br>
+    <b>Info</b><br>
+    This lets you get the username of the user you have setup the API key as
+    
+    <br>
+    <b>Added in</b><br>
+    Version 1.0
+    
+    <br>
+    <b>Needs to have API key set: <font color='lime'>YES</font></b>
+    
+    <br>
+    <b>Example</b><br>
+    <div class='blocks'>
+      when gf clicked
+      set [Username v] to (Your username ::extension)
+      say (join [Their name is: ] (Get (username) [Name v] ::extension)) for (1) seconds
+      say (join [Their website is: ] (Get (username) [Website v] ::extension)) for (1) seconds
+      say (join [They work for: ] (Get (username) [Company ] ::extension)) for (1) seconds
+    </div>
+  </body>
+</html>
