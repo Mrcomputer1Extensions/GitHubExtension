@@ -77,11 +77,12 @@
     When the user was updated<br>
     
     <br>
+    <b>Needs to have API key set: <font color='red'>NO</font></b>
+    
+    <br>
     <b>Example</b><br>
     <div class='blocks'>
       when gf clicked
-      ask [Enter Github API key] and wait
-      GitHub API key: [(answer)] ::extension
       ask [Who do you want to know about?] and wait
       say (join [Their name is: ] (Get (answer) [Name v])) for (1) seconds
       say (join [Their website is: ] (Get (answer) [Website v])) for (1) seconds
