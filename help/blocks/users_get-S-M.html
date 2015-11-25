@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Extension Help</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <link rel="stylesheet" href="http://scratchblocks.github.io/scratchblocks2.css">
+    <script src="http://scratchblocks.github.io/scratchblocks2.js"></script>
+    <script>
+    $(document).ready(function(){
+      scratchblocks2.parse("div.blocks");
+    });
+    </script>
+    <style>
+      .heading{
+        background-color:#4B4A60;
+        color:white;
+        padding:2px;
+        text-decoration:none
+      }
+    </style>
+  </head>
+  <body>
+    <a href='..'><div class='blocks'>&lt;-- Go back! ::stack control</div></a>
+    
+    <br>
+    <div class='blocks'>Get [] [Username v] ::reporter extension</div>
+    
+    <br>
+    <b>Info</b><br>
+    This lets you get info about a user
+    
+    <br>
+    <b>Added in</b><br>
+    Version 1.0
+    
+    <br>
+    <b>Options</b><br>
+    <i>Username</i><br>
+    This gets the username<br>
+    <i>ID</i><br>
+    This gets the ID<br>
+    <i>Avatar URL</i><br>
+    This gets the Avatar URL<br>
+    <i>Gravatar ID</i><br>
+    This gets the Gravatar ID<br>
+    <i>Profile URL</i><br>
+    This is the link to the users GitHub profile it looks like<br>
+    https://github.com/(username)<br>
+    <i>User Type</i><br>
+    This is the type of user<br>
+    Most accounts are user or organization<br>
+    <i>Admin</i><br>
+    This is if they are a GitHub admin<br>
+    <i>Name</i><br>
+    The user's name<br>
+    <i>Company</i><br>
+    The user's company<br>
+    <i>Website</i><br>
+    The user's website<br>
+    <i>Location</i><br>
+    The user's location setting<br>
+    <i>Email</i><br>
+    The user's email (null if not public)<br>
+    <i>Bio</i><br>
+    The user's bio<br>
+    <i>Public Repo Count</i><br>
+    Count of the user's public repos<br>
+    <i>Public Gist Count</i><br>
+    Count of the user's public gists<br>
+    <i>Followers</i><br>
+    Count of how many users are follwing this user<br>
+    <i>Following</i><br>
+    Count of how many users this user is following<br>
+    <i>Created At</i><br>
+    When the user was created<br>
+    <i>Updated at</i><br>
+    When the user was updated<br>
+    
+    <br>
+    <b>Example</b><br>
+    <div class='blocks'>
+      when gf clicked
+      ask [Enter Github API key] and wait
+      GitHub API key: [(answer)] ::extension
+      ask [Who do you want to know about?] and wait
+      say (join [Their name is: ] (Get (answer) [Name v])) for (1) seconds
+      say (join [Their website is: ] (Get (answer) [Website v])) for (1) seconds
+      say (join [They work for: ] (Get (answer) [Company ])) for (1) seconds
+    </div>
+  </body>
+</html>
