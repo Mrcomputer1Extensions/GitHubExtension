@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Extension Help</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <link rel="stylesheet" href="http://scratchblocks.github.io/scratchblocks2.css">
+    <script src="http://scratchblocks.github.io/scratchblocks2.js"></script>
+    <script>
+    $(document).ready(function(){
+      scratchblocks2.parse("div.blocks");
+    });
+    </script>
+    <style>
+      .heading{
+        background-color:#4B4A60;
+        color:white;
+        padding:2px;
+        text-decoration:none
+      }
+    </style>
+  </head>
+  <body>
+    <a href='..'><div class='blocks'>&lt;-- Go back! ::stack control</div></a>
+    
+    <br>
+    <div class='blocks'>Get issue (1) on [GitHubExtension] by [Mrcomputer1Extensions] [ID v]/div>
+    
+    <br>
+    <b>Info</b><br>
+    This lets you get info about a issue or pull request
+    
+    <br>
+    <b>Added in</b><br>
+    Version 1.0
+    
+    <br>
+    <b>Options</b><br>
+    <i>This part of the guide COMING SOON</i>
+    
+    <br>
+    <b>Needs to have API key set: <font color='lime'>YES</font></b>
+    
+    <br>
+    <b>Example</b><br>
+    <div class='blocks'>
+      when gf clicked
+      ask [Repo] and wait
+      set [Repo v] to (answer)
+      ask [Repo owner] and wait
+      set [Owner v] to (answer)
+      ask [Issue number] and wait
+      set [ID v] to (answer)
+      say (Get issue (ID) on (Repo) by (Repo Owner) [Title v] ::extension) for (1) secs
+      say (Get issue (ID) on (Repo) by (Repo Owner) [Body v] ::extension) for (1) secs
+      say (Get issue (ID) on (Repo) by (Repo Owner) [User v] ::extension) for (1) secs
+      say (Get issue (ID) on (Repo) by (Repo Owner) [Labels v] ::extension) for (1) secs
+      say (Get issue (ID) on (Repo) by (Repo Owner) [Milestone:Title v] ::extension) for (1) secs
+    </div>
+  </body>
+</html>
