@@ -41,9 +41,9 @@
     <div class='blocks'>
       when gf clicked
       set [Username v] to (Your username ::extension)
-      say (join [Their name is: ] (Get (username) [Name v] ::extension)) for (1) secs
-      say (join [Their website is: ] (Get (username) [Website v] ::extension)) for (1) secs
-      say (join [They work for: ] (Get (username) [Company v] ::extension)) for (1) secs
+      say (join [Their name is: ] (Get (username ::variables) [Name v] ::extension)) for (1) secs
+      say (join [Their website is: ] (Get (username ::variables) [Website v] ::extension)) for (1) secs
+      say (join [They work for: ] (Get (username ::variables) [Company v] ::extension)) for (1) secs
     </div>
   </body>
 </html>
