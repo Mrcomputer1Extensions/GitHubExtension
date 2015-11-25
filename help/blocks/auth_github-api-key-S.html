@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Extension Help</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <link rel="stylesheet" href="http://scratchblocks.github.io/scratchblocks2.css">
+    <script src="http://scratchblocks.github.io/scratchblocks2.js"></script>
+    <script>
+    $(document).ready(function(){
+      scratchblocks2.parse("div.blocks");
+    });
+    </script>
+    <style>
+      .heading{
+        background-color:#4B4A60;
+        color:white;
+        padding:2px;
+        text-decoration:none
+      }
+    </style>
+  </head>
+  <body>
+    <a href='..'><div class='blocks'>&lt;-- Go back! ::stack control</div></a>
+    
+    <br>
+    <div class='blocks'>GitHub API key: [] ::extension</div>
+    
+    <br>
+    <b>Info</b><br>
+    This sets the API key if it is not set some blocks may not work!
+    
+    <br>
+    <b>Added in</b><br>
+    Version 1.0
+    
+    <br>
+    <b>Example</b><br>
+    <div class='blocks'>
+      when gf clicked
+      ask [Enter Github API key] and wait
+      GitHub API key: [(answer)] ::extension
+    </div>
+  </body>
+</html>
