@@ -1,0 +1,3 @@
+# CONTRIBUTING TO THIS SCRATCH EXTENSION
+
+This guide coming soon!
