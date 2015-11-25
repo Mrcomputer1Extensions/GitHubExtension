@@ -84,9 +84,9 @@
     <div class='blocks'>
       when gf clicked
       ask [Who do you want to know about?] and wait
-      say (join [Their name is: ] (Get (answer) [Name v])) for (1) seconds
-      say (join [Their website is: ] (Get (answer) [Website v])) for (1) seconds
-      say (join [They work for: ] (Get (answer) [Company ])) for (1) seconds
+      say (join [Their name is: ] (Get (answer) [Name v] ::extension)) for (1) secs
+      say (join [Their website is: ] (Get (answer) [Website v] ::extension)) for (1) secs
+      say (join [They work for: ] (Get (answer) [Company v] ::extension)) for (1) secs
     </div>
   </body>
 </html>
